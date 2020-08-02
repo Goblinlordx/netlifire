@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: Goblinlordx/netlifire
   branch: master
   base_url: https://us-central1-netlifire.cloudfunctions.net/helloWorld
 
