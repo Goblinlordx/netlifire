@@ -22,7 +22,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.json') }}
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install dependencies
         if: steps.cache-modules.outputs.cache-hit != 'true'
