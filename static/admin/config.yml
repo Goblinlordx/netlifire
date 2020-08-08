@@ -2,7 +2,8 @@ backend:
   name: github
   repo: Goblinlordx/netlifire
   branch: master
-  base_url: https://us-central1-netlifire.cloudfunctions.net/github_oauth
+  base_url: https://us-central1-netlifire.cloudfunctions.net
+  auth_endpoint: /oauth/github/auth
 
 media_folder: "media"
 public_folder: "media"
@@ -13,7 +14,7 @@ collections:
   - name: "posts"
     label: "Posts"
     description: "Posts"
-    folder: "src/posts"
+    folder: "data/posts"
     create: true
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "meetup" }
