@@ -5,8 +5,8 @@ backend:
   base_url: https://us-central1-netlifire.cloudfunctions.net
   auth_endpoint: /oauth/github/auth
 
-media_folder: "media"
-public_folder: "media"
+media_folder: "data/media"
+public_folder: "data/media"
 
 site_url: https://netlifire.web.app
 
