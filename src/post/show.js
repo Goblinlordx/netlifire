@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../core/layout"
+import SEO from "../core/seo"
 import { graphql } from "gatsby"
 
 export default ({ data }) => {
