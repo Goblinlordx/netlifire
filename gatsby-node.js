@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const post = require("./src/post/node")
 
-// You can delete this file if you're not using it
+exports.onPostBuild = async ({ reporter }) => {
+  reporter.info("Build successful")
+}
+
+exports.createPages = async (...args) => {
+  await post(...args)
+}

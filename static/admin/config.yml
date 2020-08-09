@@ -17,6 +17,6 @@ collections:
     folder: "data/posts"
     create: true
     fields:
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "meetup" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Content", name: "content", widget: "markdown" }

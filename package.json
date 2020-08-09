@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "netlifire",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "netlifire example project/site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ben Baldivia <goblinlordx@gmail.com>",
   "dependencies": {
     "gatsby": "^2.23.12",
     "gatsby-image": "^2.4.9",
@@ -26,7 +26,9 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "netlify",
+    "netlifire"
   ],
   "license": "0BSD",
   "scripts": {
@@ -40,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/goblinlordx/netlifire"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/goblinlordx/netlifire/issues"
   }
 }
