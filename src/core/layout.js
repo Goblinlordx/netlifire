@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import "@fortawesome/fontawesome-free/css/all.css"
 import PropTypes from "prop-types"
 
 import Nav from "./nav"

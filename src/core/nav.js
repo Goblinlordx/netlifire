@@ -1,8 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 import { BASE_URL as POSTS_BASE_URL } from "../post/constants"
 
-const WIDTH = "10rem";
+const WIDTH = "7rem"
+
+const NavLink = styled(Link)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  :hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  i {
+    margin-right: 1rem;
+  }
+`
 
 export default () => (
   <div
@@ -16,17 +32,19 @@ export default () => (
         top: 0,
         left: 0,
         width: WIDTH,
-        padding: "1rem",
+        padding: "1rem 0",
         textAlign: "right",
         color: "#FFF",
       }}
     >
-      <div>
-        <Link to="/">Home</Link>
-      </div>
-      <div>
-        <Link to={POSTS_BASE_URL}>Posts</Link>
-      </div>
+      <NavLink to="/">
+        <i className="fas fa-fire-alt"></i>
+        Home
+      </NavLink>
+      <NavLink to={POSTS_BASE_URL}>
+        <i className="fas fa-sticky-note" />
+        Posts
+      </NavLink>
     </div>
   </div>
 )
