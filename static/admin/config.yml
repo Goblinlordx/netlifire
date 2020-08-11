@@ -14,8 +14,7 @@ collections:
   - name: "home"
     label: "Home"
     description: "Home page"
-    folder: "src/pages/index.mdx"
-    create: true
+    file: "src/pages/index.mdx"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
