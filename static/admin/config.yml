@@ -16,7 +16,7 @@ collections:
     files:
       - label: "Homepage"
         name: "index"
-        file: "src/pages/index.mdx"
+        file: "src/pages/index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
