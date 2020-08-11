@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Layout from "../core/layout"
 import SEO from "../core/seo"
 import { BASE_URL } from "./constants"
 
@@ -36,7 +35,7 @@ export default () => {
     })
   )
   return (
-    <Layout>
+    <>
       <SEO title="Posts index" />
       {posts.map(({ to, title }) => (
         <ul key={to}>
@@ -45,6 +44,6 @@ export default () => {
           </li>
         </ul>
       ))}
-    </Layout>
+    </>
   )
 }

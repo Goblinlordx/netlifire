@@ -1,3 +1,8 @@
+:root {
+  --color-bg-secondary: #353e49;
+  --color-active: coral;
+  --color-text-light: #fcfcfc;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5,7 +10,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: #353e49;
+  background-color: var(--color-bg-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -186,7 +191,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em 'Montserrat', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -201,7 +206,8 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  /* font-family: georgia, serif; */
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
