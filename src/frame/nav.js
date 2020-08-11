@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { BASE_URL as POSTS_BASE_URL } from "../post/constants"
+import { BASE_URL as POSTS_BASE_URL } from "../posts/constants"
 
 const WIDTH = "8rem"
 

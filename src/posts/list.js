@@ -11,7 +11,6 @@ export default () => {
       allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
         nodes {
           childMarkdownRemark {
-            excerpt
             frontmatter {
               title
               slug
@@ -25,13 +24,11 @@ export default () => {
   const posts = nodes.map(
     ({
       childMarkdownRemark: {
-        excerpt,
         frontmatter: { slug, title },
       },
     }) => ({
       to: `${BASE_URL}/${slug}`,
       title,
-      excerpt,
     })
   )
   return (

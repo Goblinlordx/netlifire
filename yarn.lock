@@ -1459,7 +1459,7 @@
     "@babel/runtime" "^7.7.2"
     regenerator-runtime "^0.13.3"
 
-"@mdx-js/mdx@1.6.16", "@mdx-js/mdx@^1.6.6":
+"@mdx-js/mdx@1.6.16", "@mdx-js/mdx@^1.6.16", "@mdx-js/mdx@^1.6.6":
   version "1.6.16"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.16.tgz#f01af0140539c1ce043d246259d8becd2153b2bb"
   dependencies:
@@ -1483,7 +1483,7 @@
     unist-builder "2.0.3"
     unist-util-visit "2.0.3"
 
-"@mdx-js/react@1.6.16", "@mdx-js/react@^1.6.6":
+"@mdx-js/react@1.6.16", "@mdx-js/react@^1.6.16", "@mdx-js/react@^1.6.6":
   version "1.6.16"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.16.tgz#538eb14473194d0b3c54020cb230e426174315cd"
 
