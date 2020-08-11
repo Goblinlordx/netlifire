@@ -5,6 +5,19 @@ import { BASE_URL as POSTS_BASE_URL } from "../post/constants"
 
 const WIDTH = "8rem"
 
+const NavBackground = styled.div`
+  min-width: ${WIDTH};
+`
+const NavContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: ${WIDTH};
+  padding: 5rem 0;
+  text-lign: right;
+  color: var(--color-text-light);
+`
+
 const NavLink = styled(props => (
   <Link partiallyActive={true} activeClassName="active" {...props} />
 ))`
@@ -34,22 +47,8 @@ const NavLink = styled(props => (
 `
 
 export default () => (
-  <div
-    style={{
-      minWidth: WIDTH,
-    }}
-  >
-    <div
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: WIDTH,
-        padding: "5rem 0",
-        textAlign: "right",
-        color: "#FFF",
-      }}
-    >
+  <NavBackground>
+    <NavContainer>
       <NavLink to="/" partiallyActive={false}>
         <i className="fas fa-fire-alt"></i>
         <span>Home</span>
@@ -58,6 +57,6 @@ export default () => (
         <i className="fas fa-sticky-note" />
         <span>Posts</span>
       </NavLink>
-    </div>
-  </div>
+    </NavContainer>
+  </NavBackground>
 )
