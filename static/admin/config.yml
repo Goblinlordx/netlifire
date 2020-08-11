@@ -11,13 +11,15 @@ public_folder: "data/media"
 site_url: https://netlifire.web.app
 
 collections:
-  - name: "home"
-    label: "Home"
-    description: "Home page"
-    file: "src/pages/index.mdx"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Homepage"
+        name: "index"
+        file: "src/pages/index.mdx"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
   - name: "posts"
     label: "Posts"
     description: "Posts"
