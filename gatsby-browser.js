@@ -1,1 +1,1 @@
-export { default as wrapRootElement } from "./src/frame/wrapper"
+export { default as wrapPageElement } from "./src/frame/wrapper"
