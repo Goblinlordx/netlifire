@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 import styled from "styled-components"
-import { BASE_URL as POSTS_BASE_URL } from "../posts/constants"
 
 const WIDTH = "8rem"
 
@@ -18,9 +17,7 @@ const NavContainer = styled.div`
   color: var(--color-text-light);
 `
 
-const NavLink = styled(props => (
-  <Link partiallyActive={true} activeClassName="active" {...props} />
-))`
+const NavLink = styled.a`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +25,7 @@ const NavLink = styled(props => (
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease;
+  cursor: pointer;
   > i {
     margin-right: 1rem;
   }
@@ -46,17 +44,23 @@ const NavLink = styled(props => (
   }
 `
 
-export default () => (
+const Nav = () => (
   <NavBackground>
     <NavContainer>
-      <NavLink to="/" partiallyActive={false}>
-        <i className="fas fa-fire-alt"></i>
-        <span>Home</span>
-      </NavLink>
-      <NavLink to={POSTS_BASE_URL}>
-        <i className="fas fa-sticky-note" />
-        <span>Posts</span>
-      </NavLink>
+      <Link href="/">
+        <NavLink>
+          <i className="fas fa-fire-alt"></i>
+          <span>Home</span>
+        </NavLink>
+      </Link>
+      <Link href="/posts">
+        <NavLink>
+          <i className="fas fa-sticky-note" />
+          <span>Posts</span>
+        </NavLink>
+      </Link>
     </NavContainer>
   </NavBackground>
 )
+
+export default Nav
