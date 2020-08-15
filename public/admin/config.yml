@@ -16,14 +16,14 @@ collections:
     files:
       - label: "Homepage"
         name: "index"
-        file: "src/pages/index.md"
+        file: "pages/index.mdx"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
   - name: "posts"
     label: "Posts"
     description: "Posts"
-    folder: "data/posts"
+    folder: "pages/posts"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
