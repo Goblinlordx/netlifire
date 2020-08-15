@@ -1,4 +1,4 @@
-import collectFiles from "../lib/collect_files"
+import collect_files from "../lib/collect_files"
 
 export default ({ posts }) => {
   return (
@@ -7,7 +7,7 @@ export default ({ posts }) => {
       {posts.map(({ slug, title }) => (
         <ul key={slug}>
           <li>
-            <a href={`/posts/${slug}.html`}>{title}</a>
+            <a href={`/posts/${slug}`}>{title}</a>
           </li>
         </ul>
       ))}
@@ -16,6 +16,9 @@ export default ({ posts }) => {
 }
 
 export const getStaticProps = async () => {
-  const posts = await collectFiles("pages/posts")
+  const posts = (await collect_files("pages/posts")).map(({ date, ...o }) => ({
+    ...o,
+    date: date.toISOString(),
+  }))
   return { props: { posts } }
 }
