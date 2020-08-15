@@ -17,6 +17,7 @@ collections:
       - label: "Homepage"
         name: "index"
         file: "pages/index.mdx"
+        format: "frontmatter"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -24,6 +25,8 @@ collections:
     label: "Posts"
     description: "Posts"
     folder: "pages/posts"
+    extension: "mdx"
+    format: "frontmatter"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
