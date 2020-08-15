@@ -7,7 +7,7 @@ export default ({ posts }) => {
       {posts.map(({ slug, title }) => (
         <ul key={slug}>
           <li>
-            <a href={`/posts/${slug}`}>{title}</a>
+            <a href={`/posts/${slug}.html`}>{title}</a>
           </li>
         </ul>
       ))}
