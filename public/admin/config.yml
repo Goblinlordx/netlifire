@@ -27,6 +27,7 @@ collections:
     folder: "pages/posts"
     extension: "mdx"
     format: "frontmatter"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
