@@ -33,3 +33,11 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - widget: string
+        hidden: true
+        name: slug
+        label: Slug
+        required: true
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters']
+        hint: >-
+          The post URL (do not include folder or file extension)
