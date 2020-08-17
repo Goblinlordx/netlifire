@@ -1,3 +1,4 @@
+import Link from "next/link"
 import collect_files from "../lib/collect_files"
 
 export default ({ posts }) => {
@@ -7,7 +8,9 @@ export default ({ posts }) => {
       {posts.map(({ slug, title }) => (
         <ul key={slug}>
           <li>
-            <a href={`/posts/${slug}`}>{title}</a>
+            <Link href="/posts/[slug]" as={`/posts/${slug}`}>
+              <a>{title}</a>
+            </Link>
           </li>
         </ul>
       ))}
